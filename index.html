@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магия Чисел | Нумерология и Совместимость</title>
+    <meta name="description" content="Откройте тайны чисел. Узнайте свою судьбу через нумерологию и проверьте совместимость с партнером.">
+    <meta name="keywords" content="нумерология, магия чисел, совместимость, судьба, число судьбы">
+    <meta property="og:title" content="Магия Чисел | Нумерология и Совместимость">
+    <meta property="og:description" content="Откройте тайны чисел. Узнайте свою судьбу через нумерологию и проверьте совместимость с партнером.">
+    <meta name="twitter:title" content="Магия Чисел | Нумерология и Совместимость">
+    <meta name="twitter:description" content="Откройте тайны чисел. Узнайте свою судьбу через нумерологию и проверьте совместимость с партнером.">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1ZLJJBY77"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P1ZLJJBY77');
+    </script>
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #FF0000;
+            --background: #FFFFFF;
+            --text-primary: #000000;
+            --text-secondary: #666666;
+            --border-color: #000000;
+            --border-light: #CCCCCC;
+        }
+    }
+
+    @layer base {
+        body {
+            background: var(--background);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+        }
+    }
+
+    @layer components {
+        .lebedev-card {
+            background: white;
+            border: 2px solid var(--border-color);
+        }
+        
+        .lebedev-input {
+            border: 2px solid var(--border-color);
+            background: white;
+        }
+        
+        .lebedev-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/CompatibilityCalculator.js"></script>
+    <script type="text/babel" src="components/PersonalNumerology.js"></script>
+    <script type="text/babel" src="components/LuckyNumbers.js"></script>
+    <script type="text/babel" src="components/YearlyCalendar.js"></script>
+    <script type="text/babel" src="components/TarotSection.js"></script>
+    <script type="text/babel" src="components/NumerologyInfo.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="utils/tarotData.js"></script>
+    <script type="text/babel" src="utils/tarotReader.js"></script>
+    <script type="text/babel" src="components/ShareButtons.js"></script>
+    <script type="text/babel" src="utils/groqConfig.js"></script>
+    <script type="text/babel" src="utils/numerologyCalculator.js"></script>
+    <script type="text/babel" src="utils/personalAnalyzer.js"></script>
+    <script type="text/babel" src="utils/groqAnalyzer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
