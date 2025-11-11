@@ -6,7 +6,7 @@ function YearlyCalendar() {
     const calculateYearlyCalendar = () => {
       if (!birthDate) return;
       
-      const currentYear = 2025;
+      const currentYear = 2026;
       const lifePath = calculateLifePath(birthDate);
       const personalYear = calculatePersonalYear(birthDate, currentYear);
       
@@ -60,11 +60,11 @@ function YearlyCalendar() {
     return (
       <section id="calendar" className="py-12 md:py-20 lg:py-24 px-6 md:px-8 lg:px-12 bg-[#F5F5F5]" data-name="yearly-calendar" data-file="components/YearlyCalendar.js">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-10 md:mb-14 lg:mb-16">
-            <h3 className="text-3xl md:text-5xl lg:text-7xl font-black mb-3 md:mb-5 lg:mb-6 leading-tight">
-              КАЛЕНДАРЬ<br/>НА 2025 ГОД
+          <div className="mb-12 md:mb-16">
+            <h3 className="text-4xl md:text-6xl font-black mb-4 md:mb-6 leading-tight tracking-tight">
+              Календарь на 2026 год
             </h3>
-            <p className="text-base md:text-2xl max-w-2xl">
+            <p className="text-lg md:text-xl max-w-2xl text-[var(--text-secondary)]">
               Узнайте энергетику каждого месяца для вас
             </p>
           </div>
@@ -74,13 +74,12 @@ function YearlyCalendar() {
               type="date"
               value={birthDate}
               onChange={(e) => setBirthDate(e.target.value)}
-              max="9999-12-31"
               className="lebedev-input w-full px-6 py-4 text-lg mb-6"
             />
             <button
               onClick={calculateYearlyCalendar}
               disabled={!birthDate}
-              className="w-full px-12 py-6 bg-[var(--primary-color)] text-white font-bold text-xl uppercase tracking-wide hover:bg-black transition-colors disabled:opacity-50"
+              className="btn-primary w-full px-12 py-5 font-bold text-lg tracking-wide disabled:opacity-50"
             >
               Рассчитать календарь
             </button>

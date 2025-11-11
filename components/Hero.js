@@ -1,48 +1,48 @@
 function Hero() {
   try {
     return (
-      <section className="pt-12 md:pt-24 lg:pt-32 pb-12 md:pb-24 lg:pb-32 px-6 md:px-8 lg:px-12 bg-white" data-name="hero" data-file="components/Hero.js">
+      <section className="pt-20 md:pt-28 pb-20 md:pb-24 px-6 md:px-8 lg:px-12 bg-gradient-to-b from-white via-[#FEF3F2] to-white" data-name="hero" data-file="components/Hero.js">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12 md:mb-20 lg:mb-24">
-            <h2 className="text-4xl md:text-7xl lg:text-9xl font-black mb-8 md:mb-12 lg:mb-16 leading-[1.2] md:leading-[1] lg:leading-[0.9] tracking-tighter">
-              РАСКРОЙТЕ<br/>ТАЙНЫ<br/>ВАШЕЙ<br/><span className="text-[var(--primary-color)]">СУДЬБЫ</span>
+          <div className="mb-16 md:mb-20">
+            <h2 className="text-5xl md:text-7xl font-black mb-6 md:mb-8 leading-tight tracking-tight">
+              Раскройте тайны<br/>вашей <span className="bg-gradient-to-r from-[var(--primary-color)] to-[var(--accent-color)] bg-clip-text text-transparent">судьбы</span>
             </h2>
             
-            <p className="text-lg md:text-3xl mb-12 md:mb-20 max-w-3xl font-normal leading-relaxed md:leading-tight">
-              Нумерологическая система для тех, кто ценит точность и глубину познания
+            <p className="text-xl md:text-2xl mb-10 md:mb-12 max-w-2xl leading-relaxed text-[var(--text-secondary)]">
+              Профессиональная нумерология: расчёт чисел судьбы, совместимости и персональных прогнозов
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-12 md:mb-20 lg:mb-24">
+            <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 md:px-10 lg:px-12 py-4 md:py-5 bg-[var(--primary-color)] text-white font-bold text-base md:text-lg uppercase tracking-wide hover:bg-black transition-colors"
+                className="btn-primary px-10 py-4 font-bold text-base tracking-wide"
               >
                 Узнать совместимость
               </button>
               
               <button 
                 onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 md:px-10 lg:px-12 py-4 md:py-5 border-2 border-black text-black font-bold text-base md:text-lg uppercase tracking-wide hover:bg-black hover:text-white transition-colors"
+                className="btn-secondary px-10 py-4 font-bold text-base tracking-wide"
               >
                 Подробнее
               </button>
             </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-black border-2 border-black">
-            <div className="bg-white p-6 md:p-12">
-              <h3 className="text-4xl md:text-6xl font-black mb-2 md:mb-4">100K+</h3>
-              <p className="text-sm md:text-xl font-medium uppercase tracking-wide">Довольных клиентов</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="lebedev-card p-10 text-center">
+              <h3 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] bg-clip-text text-transparent">12</h3>
+              <p className="text-lg font-semibold text-[var(--text-secondary)]">чисел в полном анализе</p>
             </div>
             
-            <div className="bg-white p-6 md:p-12">
-              <h3 className="text-4xl md:text-6xl font-black mb-2 md:mb-4">98%</h3>
-              <p className="text-sm md:text-xl font-medium uppercase tracking-wide">Точность расчётов</p>
+            <div className="lebedev-card p-10 text-center">
+              <h3 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] bg-clip-text text-transparent">3</h3>
+              <p className="text-lg font-semibold text-[var(--text-secondary)]">нумерологические системы</p>
             </div>
             
-            <div className="bg-white p-6 md:p-12">
-              <h3 className="text-4xl md:text-6xl font-black mb-2 md:mb-4">15+</h3>
-              <p className="text-sm md:text-xl font-medium uppercase tracking-wide">Лет опыта</p>
+            <div className="lebedev-card p-10 text-center">
+              <h3 className="text-6xl md:text-7xl font-black mb-4 bg-gradient-to-br from-[var(--primary-color)] to-[var(--accent-color)] bg-clip-text text-transparent">AI</h3>
+              <p className="text-lg font-semibold text-[var(--text-secondary)]">анализ от нейросети</p>
             </div>
           </div>
         </div>

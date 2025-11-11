@@ -32,11 +32,11 @@ function LuckyNumbers() {
     return (
       <section id="lucky" className="py-12 md:py-20 lg:py-24 px-6 md:px-8 lg:px-12 bg-white" data-name="lucky-numbers" data-file="components/LuckyNumbers.js">
         <div className="max-w-5xl mx-auto">
-          <div className="mb-10 md:mb-14 lg:mb-16">
-            <h3 className="text-3xl md:text-5xl lg:text-7xl font-black mb-3 md:mb-5 lg:mb-6 leading-tight">
-              СЧАСТЛИВЫЕ<br/>ЧИСЛА
+          <div className="mb-12 md:mb-16">
+            <h3 className="text-4xl md:text-6xl font-black mb-4 md:mb-6 leading-tight tracking-tight">
+              Счастливые числа
             </h3>
-            <p className="text-base md:text-2xl max-w-2xl">
+            <p className="text-lg md:text-xl max-w-2xl text-[var(--text-secondary)]">
               Узнайте ваши персональные счастливые числа
             </p>
           </div>
@@ -55,7 +55,6 @@ function LuckyNumbers() {
                   type="date"
                   value={birthDate}
                   onChange={(e) => setBirthDate(e.target.value)}
-                  max="9999-12-31"
                   className="lebedev-input w-full px-6 py-4 text-lg"
                 />
               </div>
@@ -65,7 +64,7 @@ function LuckyNumbers() {
           <button
             onClick={calculateLuckyNumbers}
             disabled={!fullName || !birthDate}
-            className="w-full px-12 py-6 bg-[var(--primary-color)] text-white font-bold text-xl uppercase tracking-wide hover:bg-black transition-colors disabled:opacity-50 mb-12"
+            className="btn-primary w-full px-12 py-5 font-bold text-lg tracking-wide disabled:opacity-50 mb-12"
           >
             Рассчитать счастливые числа
           </button>
@@ -108,13 +107,6 @@ function LuckyNumbers() {
                     <p className="text-sm font-bold uppercase">Месяц</p>
                   </div>
                 </div>
-              </div>
-              <div className="lebedev-card p-8">
-                <h4 className="text-xl font-black mb-6 uppercase">Поделиться</h4>
-                <ShareButtons 
-                  text={`Мои счастливые числа: ${luckyNumbers.main}, ${luckyNumbers.personal}, ${luckyNumbers.lucky1}`}
-                  url={window.location.href}
-                />
               </div>
               <div className="lebedev-card p-8">
                 <h4 className="text-xl font-black mb-6 uppercase">Поделиться</h4>

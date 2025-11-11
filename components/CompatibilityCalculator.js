@@ -38,11 +38,11 @@ function CompatibilityCalculator() {
     return (
       <section id="calculator" className="py-12 md:py-20 lg:py-24 px-6 md:px-8 lg:px-12 bg-white" data-name="compatibility-calculator" data-file="components/CompatibilityCalculator.js">
         <div className="max-w-5xl mx-auto">
-          <div className="mb-10 md:mb-14 lg:mb-16">
-            <h3 className="text-3xl md:text-5xl lg:text-7xl font-black mb-3 md:mb-5 lg:mb-6 leading-tight">
-              КАЛЬКУЛЯТОР<br/>СОВМЕСТИМОСТИ
+          <div className="mb-12 md:mb-16">
+            <h3 className="text-4xl md:text-6xl font-black mb-4 md:mb-6 leading-tight tracking-tight">
+              Калькулятор<br/>совместимости
             </h3>
-            <p className="text-base md:text-2xl max-w-2xl">
+            <p className="text-lg md:text-xl max-w-2xl text-[var(--text-secondary)]">
               Введите данные двух людей для расчета их нумерологической совместимости
             </p>
           </div>
@@ -61,7 +61,6 @@ function CompatibilityCalculator() {
                 type="date"
                 value={person1Date}
                 onChange={(e) => setPerson1Date(e.target.value)}
-                max="9999-12-31"
                 className="lebedev-input w-full px-6 py-4 text-lg"
               />
             </div>
@@ -79,7 +78,6 @@ function CompatibilityCalculator() {
                 type="date"
                 value={person2Date}
                 onChange={(e) => setPerson2Date(e.target.value)}
-                max="9999-12-31"
                 className="lebedev-input w-full px-4 md:px-5 lg:px-6 py-3 md:py-3.5 lg:py-4 text-base md:text-lg"
               />
             </div>
@@ -89,7 +87,7 @@ function CompatibilityCalculator() {
             <button
               onClick={handleCalculate}
               disabled={isCalculating || !person1Name || !person1Date || !person2Name || !person2Date}
-              className="w-full px-12 py-6 bg-[var(--primary-color)] text-white font-bold text-xl uppercase tracking-wide hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn-primary w-full px-12 py-5 font-bold text-lg tracking-wide disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isCalculating ? 'Расчет...' : 'Рассчитать совместимость'}
             </button>

@@ -24,9 +24,6 @@ function Footer() {
                 <a href="#calendar" className="block text-lg hover:text-[var(--primary-color)] font-medium uppercase tracking-wide">
                   Календарь
                 </a>
-                <a href="#tarot" className="block text-lg hover:text-[var(--primary-color)] font-medium uppercase tracking-wide">
-                  Таро
-                </a>
                 <a href="#about" className="block text-lg hover:text-[var(--primary-color)] font-medium uppercase tracking-wide">
                   О нумерологии
                 </a>

@@ -44,7 +44,6 @@ function App() {
         <CompatibilityCalculator />
         <LuckyNumbers />
         <YearlyCalendar />
-        <TarotSection />
         <NumerologyInfo />
         <Footer />
       </div>
